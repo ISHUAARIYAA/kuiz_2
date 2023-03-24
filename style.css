@@ -9,3 +9,30 @@ p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
 }
+
+div{
+    transform-origin: center center;
+    transform-style: preserve-3d;
+    animation: move 5s ease-in-out infinite ;
+
+}
+
+@keyframes move{
+
+    0%,
+    100%{
+        transform: rotate3d(1,1,40deg);
+
+    }
+
+    h1{
+        display: block;
+        line-height: 1;
+        font: 900 8em ;
+        text-transform: uppercase;
+        position: absolute;
+        animation: shine 10s ease-in-out infinite;
+
+    }
+
+}
